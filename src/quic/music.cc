@@ -1,14 +1,20 @@
-const myElement = document.getElementById("demo");
+// Numbers:
+let length = 16;
+let weight = 7.5;
 
-function getLocation() {
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(showPosition);
-  } else {
-    myElement.innerHTML = "Geolocation is not supported by this browser.";
-  }
-}
+// Strings:
+let color = "Yellow";
+let lastName = "Johnson";
 
-function showPosition(position) {
-  myElement.innerHTML = "Latitude: " + position.coords.latitude +
-  "<br>Longitude: " + position.coords.longitude;
-}
+// Booleans
+let x = true;
+let y = false;
+
+// Object:
+const person = {firstName:"John", lastName:"Doe"};
+
+// Array object:
+const cars = ["Saab", "Volvo", "BMW"];
+
+// Date object:
+const date = new Date("2022-03-25");
